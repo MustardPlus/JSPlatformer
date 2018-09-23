@@ -612,9 +612,10 @@ class AbstractEntity {
     //this.post.y += forcev;
     this.boundcheck();
     this.msk.update(this.post.x, this.post.y);
-
+	/*
     GAME.CAMERA.x = Math.floor(this.post.x) - (canvas.width / 2);
     GAME.CAMERA.y = Math.floor(this.post.y) - (canvas.height / 2);
+	*/
   }
 
   place_meeting(inst){
@@ -850,7 +851,7 @@ function update(){
   
   switch(STATE){
     case 0: // INITIALIZATION
-      level_load(GAME.level[1]);
+      level_load(GAME.level[2]);
       STATE = 1;
       break;
     case 1:
